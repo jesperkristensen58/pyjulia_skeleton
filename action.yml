@@ -1,3 +1,14 @@
-name: 'PyJulia testing'
-description: 'Perform CI testing of mixed Python + Julia code
+name: 'pyjulia-pytest'
+description: 'Setup pytest for mixed Python + Julia code bases'
 author: 'jmmshn'
+branding:
+  icon: play-circle
+  color: black
+inputs:
+  args:
+    description: Arguments for the pytest command
+    required: false
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
